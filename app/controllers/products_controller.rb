@@ -7,8 +7,14 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: @products }
+      format.json do
+        render json: @products.map { |p| view_context.product_mustache(p) }
+      end
     end
+  end
+  
+  def show
+    @product = Product.find(params[:id])
   end
   
 end
