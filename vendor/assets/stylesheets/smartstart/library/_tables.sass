@@ -1,0 +1,38 @@
+=data-table($border: #DDD, $background: #fafafa)
+  +data-table-skin($border, $background)
+  width: 100%
+  padding: 0
+  border-collapse: collapse
+  border-spacing: 0
+  td, th
+    padding: 7px 10px
+  thead th
+    font-weight: bold
+  tbody 
+    tr:hover td
+      background: #fafaef
+      
+=data-table-skin($border, $background)
+  border:  1px solid $border
+  td, th
+    border:  1px solid $border
+  thead th
+    +vertical-gradient($background, darken($background, 5%))
+  tbody 
+    tr:nth-child(2n) td
+      background: $background
+      
+=simple-table
+  width: 100%
+  padding: 0
+  border-collapse: collapse
+  border-spacing: 0
+  td, th
+    padding: 7px 10px
+  thead th
+    font-weight: bold
+  tbody tr
+    border-top: 1px solid #DDD
+    &:hover
+      background: #fafaef
+    

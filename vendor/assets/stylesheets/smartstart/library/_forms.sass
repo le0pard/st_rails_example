@@ -1,0 +1,51 @@
+$button-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(100, 100, 100, 0.1)
+$active-button-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(100, 100, 100, 0.1)
+
+$text-field-shadow: 1px 2px 2px rgba(100, 100, 100, 0.1) inset
+$active-text-field-shadow: 0 0 4px rgba(82, 168, 236, 0.6)
+
+// ----- BUTTONS ----- // 
+=simple-button($bg: #E6E6E6, $color: #333)
+  +simple-button-skin($bg, $color)
+  line-height: normal
+  padding: 5px 10px
+  text-decoration: none
+  +box-sizing
+  +box-shadow($button-shadow)
+  +border-radius(5px)
+  +inline-block
+  +text-shadow(0 1px 0 #fff)
+  &:hover
+    cursor: pointer
+    background: $bg
+    color: $color
+    text-decoration: none
+  &:active
+    +box-shadow($active-button-shadow)
+    
+=simple-button-skin($bg, $color)
+  color: $color
+  border: 1px solid darken($bg, 10%)
+  +vertical-gradient(lighten($bg, 10%), $bg)
+  +text-shadow(none)
+  &:hover
+    background: $bg
+
+// ----- TEXT FIELDS ----- //     
+=text-field
+  border: 1px solid #ccc
+  background: #fff
+  line-height: normal
+  padding: 5px
+  width: 100%
+  +border-radius(5px)
+  +box-sizing
+  +box-shadow($text-field-shadow)
+  +placeholder-color(#aaa)
+  &:focus
+    +text-field-skin(#FFF, #52A8EC)
+    +box-shadow($active-text-field-shadow)
+  
+=text-field-skin($bg, $border)
+  background: $bg
+  border-color: $border

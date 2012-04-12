@@ -1,7 +1,12 @@
-<h1>Listing products</h1>
+<div class="container">
+  <div class="phl">
+    <h1 class="mbm">Listing products</h1>
 
-<div id="products" data-json-url="<%= products_url(format: :json) %>">
-<% @products.each do |product| %>
-  <%= render "templates/product", mustache: product_mustache(product) %>
-<% end %>
+    <div id="products" data-json-url="<%= products_url(format: :json) %>">
+      <% @products.each do |product| %>
+      <%= render "templates/product", mustache: product_mustache(product) %>
+      <% end %>
+    </div>
+    
+  </div>
 </div>

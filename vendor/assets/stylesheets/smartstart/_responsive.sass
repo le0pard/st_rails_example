@@ -1,0 +1,81 @@
+.container, .container-fluid
+  margin: 0 auto
+  
+// DEFAULT DESKTOP
+// ---------------
+@media (min-width: 980px)
+  .container
+    width: 960px
+  .mobile-on 
+    display: none!important
+  .tablet-on
+    display: none!important
+  .desktop-on
+    display: block!important
+  .mobile-off
+    display: block!important
+  .tablet-off
+    display: block!important
+  .desktop-off 
+    display: none!important
+
+// LARGE DESKTOP & UP
+// ------------------
+@media (min-width: 1200px)
+  .container
+    width: 1160px
+  .container-fluid
+    max-width: 1160px
+
+// TABLETS AND BELOW
+// -----------------
+@media (max-width: 979px)
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+@media (min-width: 768px) and (max-width: 979px)
+  .container
+    width: 740px
+  .mobile-on
+    display: none!important
+  .tablet-on
+    display: block!important
+  .desktop-on
+    display: none!important
+  .mobile-off
+    display: block!important
+  .tablet-off
+    display: none!important
+  .desktop-off
+    display: block!important
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+@media (max-width: 767px)
+  .container
+    width: auto
+    padding: 0 20px
+  .mobile-on
+    display: block!important
+  .tablet-on
+    display: none!important
+  .desktop-on
+    display: none!important
+  .mobile-off
+    display: none!important
+  .tablet-off
+    display: block!important
+  .desktop-off
+    display: block!important
+  .col1of2, 
+  .col1of3, .col2of3, 
+  .col1of4, .col2of4, .col3of4,
+  .col1of5, .col2of5, .col3of5, .col4of5,
+  .col1of6, .col2of6, .col3of6, .col4of6, .col5of6
+    width: 100%
+    float: none
+    margin-left: 0
+    margin-right: 0
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px)

@@ -1,0 +1,47 @@
+@import "library/forms"
+@import "library/tables"
+@import "library/alerts"
+
+/////////////// Buttons
+.button 
+  +simple-button
+  &.primary
+    +simple-button-skin(#4185C4, #FFF)
+  &.danger
+    +simple-button-skin(#DA4F49, #FFF)
+////////////////////////////////////////
+
+////////////// Text fields
+input[type=text], input[type=password], input[type=email], textarea
+  +text-field
+  &.disabled
+    +text-field-skin(#F5F5F5, #CCC)
+    color: #BBB
+  &.error
+    +text-field-skin(#fefafa, #E05C5C)
+  &.warning
+    +text-field-skin(#fffdfa, #f6b002)
+  &.success
+    +text-field-skin(#fafffa, #00bc00)
+/////////////////////////////////////////
+
+///////////// Tables
+.table
+  +data-table
+
+.simple-table
+  +simple-table
+/////////////////////////////////////////
+  
+//////////////// Flash messages and alerts
+.flash-message
+  +alert
+  &.error
+    +alert-skin(#B94A48, #F2DEDE)
+  &.success
+    +alert-skin(#468847, #DFF0D8)
+  &.warning
+    +alert-skin(#C09853, #FFFAEC)
+  &.info
+    +alert-skin(#3A87AD, #D9EDF7)
+//////////////////////////////////////////

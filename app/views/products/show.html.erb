@@ -1,18 +1,20 @@
-<h1>Product</h1>
-
-<p>
-  <b>Name:</b>
-  <%= @product.title %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Description</b>
-  <%= @product.description %>
-</p>
-
-<%= link_to 'Back', root_path %>
+<div class="container">
+  <div class="phl">
+    <h1 class="mbm">Product</h1>
+    <div class="mbs">
+      <%= link_to '&larr; Back to all products'.html_safe, root_path %>
+    </div>
+    <div class="mbs">
+      <strong>Name:</strong>
+      <%= @product.title %>
+    </div>
+    <div class="mbs">
+      <strong>Price:</strong>
+      <%= number_to_currency(@product.price)%>
+    </div>
+    <div class="pbl">
+      <strong>Description:</strong>
+      <%= @product.description %>
+    </div>
+  </div>
+</div>

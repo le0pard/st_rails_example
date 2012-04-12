@@ -1,0 +1,186 @@
+body, input, button
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: $text-color
+
+body
+  background-color: $white
+
+// LINKS
+// -----
+a 
+  color: $link-color
+  text-decoration: none
+  
+a:hover
+  color: $link-hover
+  text-decoration: underline
+
+p 
+  margin: 0 0 $base-line-height / 2
+  font-family: $base-font-family
+  font-size: $base-font-size
+  line-height: $base-line-height
+  small 
+    font-size: $base-font-size - 2
+    color: $gray-light
+
+// HEADINGS
+// --------
+h1, h2, h3, h4, h5, h6 
+  font-weight: bold
+  color: $gray-dark
+  text-rendering: optimizelegibility // Fix the character spacing for headings
+  small 
+    font-weight: normal
+    color: $gray-light
+
+h1 
+  font-size: $h1-size 
+  line-height: $base-line-height * 2
+  small 
+    font-size: $h3-size 
+
+h2 
+  font-size: $h2-size
+  line-height: $base-line-height * 2
+  small 
+    font-size: $h3-size 
+
+h3 
+  line-height: $base-line-height * 1.5
+  font-size: $h3-size 
+  small 
+    font-size: $h4-size 
+  
+h4, h5, h6 
+  line-height: $base-line-height
+
+h4 
+  font-size: $h4-size 
+  small 
+    font-size: $h5-size 
+  
+h5 
+  font-size: $h5-size 
+
+h6 
+  font-size: $h6-size 
+  color: $gray-light
+  text-transform: uppercase
+
+
+// LISTS
+// -----
+ul, ol 
+  padding: 0
+  margin: 0 0 $base-line-height / 2 25px
+
+ul ul,
+ul ol,
+ol ol,
+ol ul 
+  margin-bottom: 0
+
+ul 
+  list-style: disc
+
+ol 
+  list-style: decimal
+
+li 
+  line-height: $base-line-height
+
+ul.unstyled,
+ol.unstyled 
+  margin-left: 0
+  list-style: none
+
+// Description Lists
+dl 
+  margin-bottom: $base-line-height
+
+dt,
+dd 
+  line-height: $base-line-height
+
+dt 
+  font-weight: bold
+
+dd 
+  margin-left: $base-line-height / 2
+
+// Horizontal rules
+hr 
+  margin: $base-line-height 0
+  border: 0
+  border-top: 1px solid $gray-lighter
+  border-bottom: 1px solid $white
+
+
+// Emphasis
+strong 
+  font-weight: bold
+
+em 
+  font-style: italic
+
+.muted 
+  color: $gray-light
+
+
+// Abbreviations and acronyms
+abbr 
+  font-size: 90%
+  text-transform: uppercase
+  border-bottom: 1px dotted #ddd
+  cursor: help
+
+
+// Blockquotes
+blockquote 
+  padding: 0 0 0 15px
+  margin: 0 0 $base-line-height
+  border-left: 5px solid $gray-lighter
+  p 
+    margin-bottom: 0
+  
+  small 
+    display: block
+    line-height: $base-line-height
+    color: $gray-light
+    &:before 
+      content: '\2014 \00A0'
+    
+  // Float right with text-align: right
+  &.pull-right 
+    float: right
+    padding-left: 0
+    padding-right: 15px
+    border-left: 0
+    border-right: 5px solid $gray-lighter
+    p,
+    small 
+      text-align: right
+    
+// Quotes
+q:before,
+q:after,
+blockquote:before, 
+blockquote:after 
+  content: ""
+
+// Addresses
+address 
+  display: block
+  margin-bottom: $base-line-height
+  line-height: $base-line-height
+  font-style: normal
+
+// Misc
+small 
+  font-size: 100%
+
+cite 
+  font-style: normal
