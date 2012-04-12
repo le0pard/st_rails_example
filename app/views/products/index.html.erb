@@ -1,0 +1,6 @@
+<h1>Listing products</h1>
+<ul>
+<% @products.each do |product| %>
+  <%= render 'templates/product', mustache: product %>
+<% end %>
+</ul>
