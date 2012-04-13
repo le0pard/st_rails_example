@@ -12,7 +12,7 @@ class ProductsPager
       $.getJSON($('#products').data('json-url'), page: @page, @render)
 
   nearBottom: =>
-    $(window).scrollTop() > $(document).height() - $(window).height() - 50
+    $(window).scrollTop() > $(document).height() - $(window).height() - 100
     
   render: (products) =>
     for product in products
