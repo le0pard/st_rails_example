@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require mustache
-//= require_tree ../../views/templates
+//= require_tree ../../templates
 
 //= require "products"
