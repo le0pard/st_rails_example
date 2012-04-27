@@ -1,18 +1,15 @@
 <div class="container">
   <div class="flash-message info mvm">
-    This is demo application for smt_rails gem (Shared Mustache Templates).<br />
+    This is demo application for <a href="https://github.com/railsware/smt_rails">smt_rails gem</a> (Shared Mustache Templates).<br />
  <a href="http://blog.railsware.com/2012/04/12/shared-mustache-templates-for-rails-3/">Get more info &rarr;</a>
   </div>
   <div class="content">
     <div class="phl pvm">
       <h1 class="mbm">Listing products</h1>
-
-      <div id="products" data-json-url="<%= products_url(format: :json) %>">
-        <% @products.each do |product| %>
-        <%= render "templates/product", mustache: product_mustache(product) %>
-        <% end %>
-      </div>
-
+    <div id="products" data-json-url="<%= products_url(format: :json) %>">
+      <% @products.each do |product| %>
+        <%= render "products/product", mustache: product_mustache(product) %>
+      <% end %>
     </div>
   </div>
 </div>
