@@ -16,7 +16,7 @@ class ProductsPager
     
   render: (products) =>
     for product in products
-      $('#products').append SMT['products/product'](product)
+      $('#products').append SMT['products/product'](product, {"products/product_description": SMT['products/product_description']()})
     $(window).scroll(@check) if products.length > 0
     
 $ ->

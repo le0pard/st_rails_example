@@ -2,6 +2,8 @@
   <h2><a href="{{url}}">{{title}}</a></h2>
   <div class="details">
     <strong>{{price}}</strong>
-    <p>{{description}}</p>
+    {{#price}}
+      {{> products/product_description}}
+    {{/price}}
   </div>
 </div>

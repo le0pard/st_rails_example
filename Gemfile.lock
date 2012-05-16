@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/railsware/smt_rails.git
-  revision: 8e543259ecf202aa0bdeb93500da04dcbcd16ef5
+  revision: 08c535a77297749483ea542d1accc684e8c2c134
   specs:
     smt_rails (0.2.0)
       mustache (>= 0.99.4)
