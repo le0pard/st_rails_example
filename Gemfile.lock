@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/railsware/smt_rails.git
-  revision: 08c535a77297749483ea542d1accc684e8c2c134
+  revision: c0fab00cbfd379785d2bd216ba7a9ecb3b2a9678
   specs:
-    smt_rails (0.2.0)
+    smt_rails (0.2.1)
       mustache (>= 0.99.4)
       rails (>= 3.1.0)
       sprockets (>= 2.0.3)
@@ -46,9 +46,9 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.3.1)
+    coffee-script-source (1.3.3)
     erubis (2.7.0)
-    execjs (1.3.0)
+    execjs (1.3.2)
       multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.0)
@@ -56,7 +56,7 @@ GEM
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
-    json (1.6.6)
+    json (1.7.3)
     kaminari (0.13.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -67,7 +67,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
-    multi_json (1.3.2)
+    multi_json (1.3.5)
     mustache (0.99.4)
     pg (0.13.2)
     polyglot (0.3.3)
@@ -96,12 +96,12 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
-    sass (3.1.16)
+    sass (3.1.18)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    sprockets (2.1.2)
+    sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
