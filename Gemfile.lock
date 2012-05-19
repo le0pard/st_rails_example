@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/railsware/sht_rails.git
-  revision: dfc8cdeeabd444e06cef2c7c4d53c72f2e63144f
+  revision: 9f20a09d07e439fb38a1eaec05e3d2af8f8dd576
   specs:
     sht_rails (0.1.0)
       handlebars (>= 0.3.0)

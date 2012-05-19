@@ -1,5 +1,5 @@
 module ProductsHelper
-  def product_template_data(product)
+  def product_template_smt(product)
     {
       url: product_url(product),
       title: product.title,

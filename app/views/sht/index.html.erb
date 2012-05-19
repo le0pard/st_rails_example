@@ -8,7 +8,7 @@
       <h1 class="mbm">Listing products</h1>
     <div id="productsSht" data-json-url="<%= sht_index_url(format: :json) %>">
       <% @products.each do |product| %>
-        <%= render "sht/product", handlebars: product_template_data(product), partials: {product_description: (render "sht/product_description")} %>
+        <%= render "sht/product", handlebars: product_template_sht(product), partials: {product_description: (render "sht/product_description")} %>
       <% end %>
     </div>
   </div>

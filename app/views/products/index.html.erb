@@ -8,7 +8,7 @@
       <h1 class="mbm">Listing products</h1>
     <div id="products" data-json-url="<%= products_url(format: :json) %>">
       <% @products.each do |product| %>
-        <%= render "products/product", mustache: product_template_data(product) %>
+        <%= render "products/product", mustache: product_template_smt(product) %>
       <% end %>
     </div>
   </div>

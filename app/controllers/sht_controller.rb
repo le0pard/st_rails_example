@@ -6,7 +6,7 @@ class ShtController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        render json: @products.map { |p| view_context.product_template_data(p) }
+        render json: @products.map { |p| view_context.product_template_sht(p) }
       end
     end
   end
