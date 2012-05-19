@@ -3,6 +3,7 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 class ProductsShtPager
   constructor: (@page = 1) ->
+    Handlebars.registerPartial('product_description', SHT['sht/product_description'])
     $(window).scroll(@check)
   
   check: =>
@@ -16,7 +17,6 @@ class ProductsShtPager
     
   render: (products) =>
     for product in products
-      Handlebars.registerPartial('product_description', SHT['sht/product_description'])
       $('#productsSht').append SHT['sht/product'](product)
     $(window).scroll(@check) if products.length > 0
     
