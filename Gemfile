@@ -9,6 +9,7 @@ gem 'json'
 gem 'jquery-rails'
 gem 'pg'
 gem 'smt_rails', :git => 'git://github.com/railsware/smt_rails.git'
+gem 'sht_rails', :git => 'git://github.com/railsware/sht_rails.git'
 gem 'kaminari'
 
 # Gems used only for assets and not required

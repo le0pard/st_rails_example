@@ -1,7 +1,7 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-class ProductsPager
+class ProductsShtPager
   constructor: (@page = 1) ->
     $(window).scroll(@check)
   
@@ -9,15 +9,16 @@ class ProductsPager
     if @nearBottom()
       @page++
       $(window).unbind('scroll', @check)
-      $.getJSON($('#products').data('json-url'), page: @page, @render)
+      $.getJSON($('#productsSht').data('json-url'), page: @page, @render)
 
   nearBottom: =>
     $(window).scrollTop() > $(document).height() - $(window).height() - 100
     
   render: (products) =>
     for product in products
-      $('#products').append SMT['products/product'](product, {"products/product_description": SMT['products/product_description']()})
+      Handlebars.registerPartial('product_description', SHT['sht/product_description'])
+      $('#productsSht').append SHT['sht/product'](product)
     $(window).scroll(@check) if products.length > 0
     
 $ ->
-  new ProductsPager() if $('#products').length
+  new ProductsShtPager() if $('#productsSht').length

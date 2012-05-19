@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require mustache
+//= require handlebars
 //= require_tree ../../templates
 
 //= require "products"
+//= require "sht"
+

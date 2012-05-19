@@ -1,6 +1,4 @@
-class ProductsController < ApplicationController
-  # GET /products
-  # GET /products.json
+class ShtController < ApplicationController
   def index
     page = params[:page] || 1
     @products = Product.order(:created_at).page(page)
@@ -16,5 +14,4 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
   end
-  
 end
