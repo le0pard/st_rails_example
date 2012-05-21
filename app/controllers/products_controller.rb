@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
-        render json: @products.map { |p| view_context.product_template_smt(p) }
+        render json: @products.map { |p| view_context.product_for_template(p) }
       end
     end
   end

@@ -20,7 +20,7 @@
           <h1 class="mbm">Listing products using Mustache</h1>
           <div id="products" data-json-url="<%= products_url(format: :json) %>">
             <% @products.each do |product| %>
-            <%= render "products/product", mustache: product_template_smt(product) %>
+            <%= render "products/product", mustache: product_for_template(product) %>
             <% end %>
           </div>
         </div>
@@ -32,7 +32,7 @@
           <h1 class="mbm">Listing products using Handlebars</h1>
           <div id="productsSht">
             <% @products.each do |product| %>
-            <%= render "sht/product", handlebars: product_template_sht(product), partials: {product_description: (render "sht/product_description")} %>
+            <%= render "sht/product", handlebars: product_for_template(product), partials: {product_description: (render "sht/product_description")} %>
             <% end %>
           </div>
         </div>
