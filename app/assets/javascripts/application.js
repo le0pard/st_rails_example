@@ -17,5 +17,4 @@
 //= require_tree ../../templates
 
 //= require "products"
-//= require "sht"
 
