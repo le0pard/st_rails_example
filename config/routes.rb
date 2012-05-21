@@ -1,6 +1,5 @@
 SmtRailsExample::Application.routes.draw do
   resources :products, :only => [:index, :show]
-  resources :sht, :only => [:index, :show]
   root :to => 'products#index'
 
   # The priority is based upon order of creation:
