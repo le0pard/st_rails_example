@@ -19,7 +19,7 @@ class ProductsPager
   render: (products) =>
     for product in products
       # mustache templaes
-      $('#products').append SMT['products/product'](product, {"products/product_description": SMT['products/product_description']()})
+      $('#products').append SMT['products/product'](product)
       # handlebars templates
       $('#productsSht').append SHT['sht/product'](product)
     $(window).scroll(@check) if products.length > 0
