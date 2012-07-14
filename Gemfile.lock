@@ -10,10 +10,10 @@ GIT
 
 GIT
   remote: git://github.com/railsware/smt_rails.git
-  revision: 0fdced41885d23c2dc9d2058714dea579f0967f3
+  revision: d630d318d1f83c2cf16ab4759f5e6f5d627ddc93
   branch: master
   specs:
-    smt_rails (0.2.2)
+    smt_rails (0.2.3)
       mustache (>= 0.99.4)
       rails (>= 3.1.0)
       sprockets (>= 2.0.3)
