@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,7 +9,7 @@ gem 'json'
 gem 'jquery-rails'
 gem 'pg'
 gem 'smt_rails', :github => 'railsware/smt_rails', :branch => 'master'
-gem 'sht_rails', :git => 'git://github.com/railsware/sht_rails.git'
+gem 'sht_rails', :github => 'railsware/sht_rails', :branch => 'master'
 gem 'kaminari'
 
 # Gems used only for assets and not required
