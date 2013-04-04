@@ -8,8 +8,8 @@ gem 'rails', '3.2.13'
 gem 'json'
 gem 'jquery-rails'
 gem 'pg'
-gem 'smt_rails', :github => 'railsware/smt_rails', :branch => 'master'
-gem 'sht_rails', :github => 'railsware/sht_rails', :branch => 'master'
+gem 'smt_rails', :github => 'railsware/smt_rails'
+gem 'sht_rails', :github => 'railsware/sht_rails'
 gem 'kaminari'
 
 # Gems used only for assets and not required
