@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/railsware/sht_rails.git
-  revision: d6a2a3f06de878466b5183d2f4489d6e11a0e1c8
+  revision: bd7fd373b6f049353f1406d2fe6f625e891b10e3
   specs:
     sht_rails (0.2.0)
       execjs (>= 0.3.0)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/railsware/smt_rails.git
-  revision: 7fb874e99c8f0985696ef9e26b1c267c9e1ce508
+  revision: 7d63a3d5c838881690d365f41f45b9082c2611c8
   specs:
     smt_rails (0.2.6)
       mustache (>= 0.99.4)
@@ -65,10 +65,10 @@ GEM
     handlebars (0.4.0)
       commonjs (~> 0.2.3)
       therubyracer (~> 0.11.1)
-    hike (1.2.2)
+    hike (1.2.3)
     i18n (0.6.1)
     journey (1.0.4)
-    jquery-rails (3.0.0)
+    jquery-rails (3.0.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
@@ -80,7 +80,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
-    multi_json (1.7.5)
+    multi_json (1.7.7)
     mustache (0.99.4)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -126,7 +126,7 @@ GEM
       ref
     thor (0.18.1)
     tilt (1.4.1)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
