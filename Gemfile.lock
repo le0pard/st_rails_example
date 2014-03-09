@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: git://github.com/railsware/smt_rails.git
-  revision: 7d63a3d5c838881690d365f41f45b9082c2611c8
+  revision: c01389d6b09981f95ca4b959b3b9cc177a8357a0
   specs:
-    smt_rails (0.2.6)
+    smt_rails (0.2.7)
       mustache (>= 0.99.4)
       rails (>= 3.1.0)
       sprockets (>= 2.0.3)
@@ -130,7 +130,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.38)
+    tzinfo (0.3.39)
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
